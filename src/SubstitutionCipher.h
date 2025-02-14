@@ -27,6 +27,14 @@ constexpr const char* CAESAR_SHIFT_JSON_STARTER = R"(
         "A": "E"
     }
 )";
+
+constexpr const char* SUB_SHIFT_JSON_START = R"(
+    {
+        "O" : "e",
+        "B" : "a",
+        "T" : "i"
+    }
+)";
     
 
 class SubstitutionCipher

@@ -34,6 +34,7 @@ SubstitutionCipher::SubstitutionCipher(const std::string& path)
 
     // initializing stuff for caeser shift
    m_corruptionDetected = PrepareCaesarShiftKey();
+   SetSubstitutionMap();
 }
 
 void SubstitutionCipher::AssignCipherText()
@@ -305,7 +306,11 @@ void SubstitutionCipher::SetSubstitutionMap()
             std::cerr << "Try creating the mapping file manually, make sure it is named: " << SUBSTITUTION_MAPPING_PATH << " and is in the same directory as the main executable." << std::endl;
             return;
         }
+        json j;
+        j["O"] = "e";
+        mapFile << j.dump(4);
         mapFile.close();
+        return;
     }
     
     std::ifstream file(mapFilePath);
