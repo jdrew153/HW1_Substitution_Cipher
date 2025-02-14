@@ -1,0 +1,4 @@
+shift-cipher
+substitution-cipher
+*.json
+/.vscode/
