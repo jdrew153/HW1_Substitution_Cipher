@@ -42,27 +42,23 @@ CSC1 6100 - HW1 Shift and Substitution Ciphers.
     * Just be sure to delete the whole directory because the program won't write the json files if the keys directory is present, 
       but empty. 
 
-## Project Structure
- -- include
-    |
-     -> json.hpp
- -- keys (will be created upon running the program)
-    |
-     -> shift-key.json 
-    |
-     -> substitution-key.json
- -- src
-    |
-     -> SubstitutionCipher.cpp
-    | 
-      -> SubstitutionCipher.h
- -- third-party
-    |
-     -> FXTUI (library for creating terminal gui applications.)
- -> main.cpp
- -> Makefile
- -> README.md (this file)
- 
 
+ # Project Structure
 
+include/
+└── json.hpp
 
+keys/ (created upon running the program)
+├── shift-key.json
+└── substitution-key.json
+
+src/
+├── SubstitutionCipher.cpp
+└── SubstitutionCipher.h
+
+third-party/
+└── FXTUI (library for creating terminal GUI applications)
+
+main.cpp  
+Makefile  
+README.md (this file)
