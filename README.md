@@ -45,20 +45,20 @@ CSC1 6100 - HW1 Shift and Substitution Ciphers.
 
  # Project Structure
 
-include/
+include/  
 └── json.hpp
 
-keys/ (created upon running the program)
-├── shift-key.json
-└── substitution-key.json
+keys/ (created upon running the program)  
+├── shift-key.json  
+└── substitution-key.json  
 
-src/
-├── SubstitutionCipher.cpp
-└── SubstitutionCipher.h
+src/  
+├── SubstitutionCipher.cpp  
+└── SubstitutionCipher.h  
 
-third-party/
-└── FXTUI (library for creating terminal GUI applications)
+third-party/  
+└── FXTUI (library for creating terminal GUI applications)  
 
-main.cpp  
+main.cpp    
 Makefile  
-README.md (this file)
+README.md (this file)  
